@@ -7,6 +7,10 @@ Create Anaconda environment
 conda create -n ddpm_py311 python=3.11 --yes
 conda activate ddpm_py311
 ```
+Choose the CUDA version on the official PyTorch website: [https://pytorch.org/](https://pytorch.org/)
+```bash
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
 
 Install the remaining requirements
 ```bash
