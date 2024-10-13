@@ -1,5 +1,5 @@
 # This is a clean implementation of DDPM
-![reverse process](https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy.gif)
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy.gif' width='100%'/>
 
 ## Installation
 Create Anaconda environment
@@ -22,3 +22,9 @@ python main.py
 ```bash
 python inference.py
 ```
+# More results
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_0.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_1.gif' width='50%'/>
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_2.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_3.gif' width='50%'/>
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_4.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_5.gif' width='50%'/>
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_6.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_7.gif' width='50%'/>
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_8.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_9.gif' width='50%'/>
