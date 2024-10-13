@@ -1,5 +1,5 @@
 # This is a clean implementation of DDPM
-<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy.gif' width='100%'/>
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy.gif' width='100%'/>
 
 ## Installation
 Create Anaconda environment
@@ -23,8 +23,8 @@ python main.py
 python inference.py
 ```
 ## More results
-<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_0.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_1.gif' width='50%'/>
-<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_2.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_3.gif' width='50%'/>
-<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_4.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_5.gif' width='50%'/>
-<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_6.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_7.gif' width='50%'/>
-<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_8.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/enjoy_9.gif' width='50%'/>
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy_0.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy_1.gif' width='50%'/>
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy_2.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy_3.gif' width='50%'/>
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy_4.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy_5.gif' width='50%'/>
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy_6.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy_7.gif' width='50%'/>
+<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy_8.gif' width='50%'/><img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy_9.gif' width='50%'/>
