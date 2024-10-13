@@ -72,7 +72,7 @@ def inference():
     alpha_bar = torch.cumsum(alpha.log(), dim=0).exp().to(device)
 
     model = DiT(img_size=28, patch_size=4, channel=1, emb_size=64, label_num=10, dit_num=3, head=4).to(device)
-    model.load_state_dict(torch.load('./model.pth'))
+    model.load_state_dict(torch.load('./model.pth', weights_only=True))
     tensor = torch.randn(10, 1, 28, 28).to(device)
     label = torch.arange(10).to(device)
     # label = 3 * torch.ones(size=(10,)).long().to(device)  # you can also choose a specific number from 0 to 9
