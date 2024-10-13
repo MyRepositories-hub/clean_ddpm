@@ -84,7 +84,7 @@ def inference():
         pbar.set_description('Denoising steps')
         t = torch.Tensor([step] * 10).int().to(device)
         tensor -= (1 - alpha[step]) / (torch.sqrt(1 - alpha_bar[step])) * model(tensor, t, label)
-        tensor /= torch.sqrt(alpha[step].view(-1, 1, 1, 1))
+        tensor /= torch.sqrt(alpha[step])
         z = torch.randn_like(tensor) if step > 0 else 0.0
         tensor += args.sigma * z
         tensor = torch.clamp(tensor, -1, 1)

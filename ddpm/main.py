@@ -15,8 +15,8 @@ def get_args():
     Hyperparameter settings for DDPM
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('--t_start', type=float, default=0.0001)
-    parser.add_argument('--t_end', type=float, default=0.02)
+    parser.add_argument('--beta_start', type=float, default=0.0001)
+    parser.add_argument('--beta_end', type=float, default=0.02)
     parser.add_argument('--t_max', type=int, default=1000)
     parser.add_argument('--sigma', type=float, default=0.02)
     parser.add_argument('--batch_size', type=int, default=512)
@@ -57,7 +57,7 @@ def train():
     loss_function = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=args.learning_rate)
 
-    alpha = 1 - torch.linspace(args.t_start, args.t_end, args.t_max).to(device)
+    alpha = 1 - torch.linspace(args.beta_start, args.beta_end, args.t_max).to(device)
     alpha_bar = torch.cumsum(alpha.log(), dim=0).exp().to(device)
 
     pbar = tqdm(range(args.update_epoch))
