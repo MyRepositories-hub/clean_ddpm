@@ -68,7 +68,7 @@ def inference():
     """
     args = get_args()
     device = torch.device('cuda' if torch.cuda.is_available() and args.use_cuda else 'cpu')
-    alpha = 1 - torch.linspace(args.t_start, args.t_end, args.t_max).to(device)
+    alpha = 1 - torch.linspace(args.beta_start, args.beta_end, args.t_max).to(device)
     alpha_bar = torch.cumsum(alpha.log(), dim=0).exp().to(device)
 
     model = DiT(img_size=28, patch_size=4, channel=1, emb_size=64, label_num=10, dit_num=3, head=4).to(device)
