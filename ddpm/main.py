@@ -12,7 +12,7 @@ from dit import DiT
 
 def get_args():
     """
-    Hyperparameter Settings for DDPM
+    Hyperparameter settings for DDPM
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('--t_start', type=float, default=0.0001)
@@ -63,7 +63,6 @@ def train():
     pbar = tqdm(range(args.update_epoch))
     for _ in pbar:
         pbar.set_description('Training loss')
-        loss_list = []
         for image, label in load_mnist(args.batch_size):
             if len(label) != args.batch_size:
                 continue
@@ -77,7 +76,6 @@ def train():
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-            loss_list.append(loss.item())
             pbar.set_postfix(loss=loss.item())
 
     torch.save(model.state_dict(), './model.pth')

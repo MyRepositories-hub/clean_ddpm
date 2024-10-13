@@ -74,16 +74,17 @@ def inference():
     model = DiT(img_size=28, patch_size=4, channel=1, emb_size=64, label_num=10, dit_num=3, head=4).to(device)
     model.load_state_dict(torch.load('./model.pth'))
     tensor = torch.randn(10, 1, 28, 28).to(device)
-    label = torch.arange(0, 10).to(device)
+    label = torch.arange(10).to(device)
+    # label = 3 * torch.ones(size=(10,)).long().to(device)  # you can also choose a specific number from 0 to 9
     create_file('./denoising_process')
 
     model.eval()
     pbar = tqdm(reversed(range(args.t_max)))
     for step in pbar:
         pbar.set_description('Denoising steps')
-        t = torch.Tensor([step] * 10).to(device)
+        t = torch.Tensor([step] * 10).int().to(device)
         tensor -= (1 - alpha[step]) / (torch.sqrt(1 - alpha_bar[step])) * model(tensor, t, label)
-        tensor /= torch.sqrt(alpha[step])
+        tensor /= torch.sqrt(alpha[step].view(-1, 1, 1, 1))
         z = torch.randn_like(tensor) if step > 0 else 0.0
         tensor += args.sigma * z
         tensor = torch.clamp(tensor, -1, 1)
