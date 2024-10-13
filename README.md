@@ -1,5 +1,5 @@
 # This is a clean implementation of DDPM
-<img src='https://github.com/MyRepositories-hub/clean_ddpm/blob/main/results/enjoy.gif' width='100%'/>
+
 
 ## Installation
 Create Anaconda environment
